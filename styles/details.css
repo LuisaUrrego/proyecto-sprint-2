@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0 50px;
+    font-family: 'Gill Sans';
+    background-color: black;
+}
+
+.header__nav{
+    display: flex;
+    padding: 10px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__figure img{
+    width: 300px;
+    cursor: pointer;
+   
+   
+}
+.header__busqueda img{
+    left: -453px;
+    
+}
+.reproducir iframe{
+    width: 700px;
+    height: 400px;
+}
+.main__list{
+    font-family:'Gill Sans';
+    list-style: none;
+    color: aliceblue;
+    font-size: 20px;
+    
+}
+.header__agregar{
+    text-decoration: none;
+    color: aqua;
+    font-size: 25px;
+}
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    .header__nav{
+     flex-direction: column;
+    }
+}

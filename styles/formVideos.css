@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0 50px;
+    font-family: 'Gill Sans';
+    background-color: wheat;
+}
+
+.header__nav{
+    display: flex;
+    padding: 10px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__figure img{
+    width: 300px;
+    cursor: pointer;
+   
+   
+}
+.header__busqueda img{
+    left: -453px;
+    
+}
+.header__link{
+    text-decoration: none;
+    color:coral;
+    font-size: 30px;
+}
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    color: coral;
+}
+#form label{
+    font-weight: 700;
+    
+}
+#form input, #form select{
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 300px;
+    
+}
+#form button{
+    padding: 10px 20px;
+    font-family: 'Gill Sans';
+    background-color: coral;
+    border: 3px solid wheat;
+    cursor: pointer;
+    border-radius: 10px;
+}
+#form button:hover{
+    background-color: aliceblue;
+}
+
+
+@media screen and (max-width: 600px) {
+    .header__nav{
+     flex-direction: column;
+    }
+}

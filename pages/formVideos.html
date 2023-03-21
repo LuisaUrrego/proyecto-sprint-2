@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/formVideos.css">
+    <title>Formulario: Agregar videos</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <figure class="header__figure">
+
+                <img class="header__image" src="../assets/imagenes/Frame 13 (1).png" alt="Logo Videotube">
+                
+            </figure>
+        </nav>
+    </header>
+    <div>
+        <a class="header__link" href="./pages/formVideos.html"> Agregar video</a> 
+    </div>
+    <main>
+        <form id="form" action="">
+            <label for="videoName">Nombre</label>
+            <input type="text" id="videoName" placeholder="Ingrese el nombre del video">
+            <label for="image">Imagen</label>
+            <input type="text" id="image" placeholder="Ingrese la imagen del video">
+            <label for="">Video</label>
+            <input type="text" id="video" placeholder="Ingrese la direccion del video">
+            <label for="nameCreator">Canal</label>
+            <input type="text" id="nameCreator" placeholder="Ingrese el nombre del canal">
+            <label for="numberViews">Visitas</label>
+            <input type="number" id="numberViews" placeholder="Ingrese el número de visitas del video">
+            <label for="date">Fecha</label>
+            <input type="date" id="date" placeholder="Ingrese la fecha del video">
+            <label for="name">Titulo principal</label>
+            <input type="text" id="name" placeholder="Ingrese el titulo del video">
+            <label for="category">Categoria</label>
+            <select  id="category">
+                <option value="">Seleccione categoria</option>
+                <option value="Comedia">Comedia</option>
+                <option value="Entretenimiento">Entretenimiento</option>
+                <option value="Belleza">Belleza</option>
+                <option value="Programación">Programación</option>
+                <option value="Documentales">Documentales</option>
+                <option value="Música">Música</option>
+            </select>
+            <button type="submit">Crear video</button>
+        </form>
+
+    </main>
+    <script src="../scripts/formVideos.js" type="module"></script>
+</body>
+</html>
