@@ -1,5 +1,8 @@
 import{videoCards} from "../scripts/data.js"
+
+
 //Escuchar el logo para redirecionar a la imagenes
+
 const logoVideoTube = document.querySelector(".header__image");
 logoVideoTube.addEventListener('click', () => {
     location.href = "../index.html"
@@ -17,11 +20,11 @@ form.addEventListener("submit", (e) => {
     //capturar inputs y selects
     const input = childrenForm.filter((item) => item.localName === "input" ||  item.localName === "select" );
     const itemSelect = childrenForm.filter((item)=> item.localName === "select");
+   
     //creacion del objeto
     const nuevoVideo = {
         videoName: "",
         image: "",
-        video:"",
         details: {
             name: "",
             nameCreator: "",
@@ -50,9 +53,12 @@ form.addEventListener("submit", (e) => {
         nuevoVideo.id = videoCards.length + 1;
         videoCards.push(nuevoVideo)
         sessionStorage.setItem('videos', JSON.stringify(videoCards));
+        Swal.fire("Buen trabajo!", "El nuevo video fue creado exitosamente", "success");
+        
+        form.reset();
         
     }
-console.log(videoCards);
+//console.log(videosSession);
     
  }
     
@@ -70,15 +76,14 @@ console.log(videoCards);
             }
             
         }else{
-            const valuePropertyName = objectData [key]
+           const valuePropertyName = objectData [key]
                 stringsVacios += !valuePropertyName ? `${key} `: "";
 
         }
         
     }
     if (stringsVacios) {
-        alert ("lo sentimos hay campos vacios");
-        return false;
+        Swal.fire("Oops!", `Hay campos vacíos: ${stringsVacios}`, "error");
         
         
     }else{

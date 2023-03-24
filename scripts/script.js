@@ -1,5 +1,7 @@
 import { videoCards } from "./data.js";
 console.log(videoCards);
+const videosSession =
+  JSON.parse(sessionStorage.getItem('videos')) || videoCards;
 
 //Mostrar los imagenes de los videos 
 const containerVideos = document.querySelector(".main__videos");
@@ -29,7 +31,7 @@ const portadaVideos = (container, portadasList) =>{
 };
 //Escuchar eventos cuando se recarga la pagina
 document.addEventListener('DOMContentLoaded', () => {
-    portadaVideos(containerVideos, videoCards );
+    portadaVideos(containerVideos, videosSession );
 })
 
 //Escuchar en evento click de los videos
@@ -44,7 +46,7 @@ document.addEventListener('click', (event) =>{
 //Funcionamiento de los botones del filtrado
 //1.Creacion del array con las categorias del array principal
 const categorias = ['all'];
-videoCards.forEach((item) => {
+videosSession.forEach((item) => {
     if (!categorias.includes(item.details.category)) {
         categorias.push(item.details.category);
         
@@ -56,8 +58,8 @@ categorias.forEach((item) => {
     filtraciones.addEventListener("click" , () => {
         const videosFiltrados = 
         item === 'all'
-        ? videoCards
-        :videoCards.filter((element) => 
+        ? videosSession
+        :videosSession.filter((element) => 
         element.details.category === item);
         portadaVideos(containerVideos, videosFiltrados);
     });

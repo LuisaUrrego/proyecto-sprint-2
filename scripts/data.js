@@ -206,7 +206,7 @@ export const videoCards = [
     {
         id: 14,
         videoName: "BLESSD rapeando con SUSO EL PASPI #TheSusosShow Caracol Televisión",
-        image: "https://i.ytimg.com/vi/Y5Oe1bss5gU/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFTyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDj4coH-W6LgDZV0jCvL2kKW94yig",
+        image: "https://i.ytimg.com/vi/VW_7FkQzSfM/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDtq2OD2ldW7c0WJj7tNNiQ2_44TQ",
         video: "https://www.youtube.com/embed/Y5Oe1bss5gU",
         details: {
             name:  "BLESSD rapeando con SUSO EL PASPI #TheSusosShow Caracol Televisión",

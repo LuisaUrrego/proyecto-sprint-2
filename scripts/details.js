@@ -1,4 +1,5 @@
 import{videoCards} from "../scripts/data.js"
+
 //Escuchar el logo para redirecionar a la imagenes
 const logoVideoTube = document.querySelector(".header__image");
 logoVideoTube.addEventListener('click', () => {
@@ -39,6 +40,7 @@ const pintarInformacion = (video__Details, videoPpal) => {
 }
 
 pintarInformacion(videoDetails, videos);
+
 
 
 
